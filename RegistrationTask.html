@@ -1,0 +1,77 @@
+<!-- Create a simple Registration form using html & css  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+        .fields{
+            width: 300px;
+            height: 20px;
+        }
+        #gen{
+            margin-left: -120px;
+        }
+        #int{
+            margin-left: -50px;
+        }
+        #drp{
+            /* margin-left: -180px; */
+            width: 300px;
+            padding: 5px;
+        }
+        #btn{
+            width: 300px;
+            background-color: rgb(87, 87, 242);
+            color: white;
+            border-color: blue;
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 7px;
+            
+        }
+        #cont{
+            box-shadow: 0 0 8px;
+            padding: 10px;
+            width: 350px;
+            margin-left: 500px;
+            margin-top: 30px;
+            border-radius: 20px;
+            padding-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="cont">
+    <h2>Fill the Form</h2>
+    <form action="">
+    <input type="text" name="usrname" id="" placeholder="Full Name" class="fields"><br><br>
+    <input type="email" name="mail" id="" placeholder="Email" class="fields"><br><br>
+    <input type="password" name="pwd" placeholder="Password" class="fields"><br><br>
+    <label for="gn" id="gen">Gender:</label>
+    <input type="radio" name="gn" id="" value="Male">Male   
+    <input type="radio" name="gn" id="" value="Female">Female <br><br>
+    <label for="" id="int">Interests:</label>
+    <input type="checkbox" name="int" id="">Sports 
+    <input type="checkbox" name="int" id="">Music
+    <input type="checkbox" name="int" id="">Travel <br><br>
+    <select name="" id="drp">
+        <option value="--">Choose Country</option>
+        <option value="ind">India</option>
+        <option value="UK">UK</option>
+        <option value="eur">Europe</option>
+    </select><br><br>
+    <button type="submit" id="btn">Register</button>
+    </form>
+    </div>
+    
+</body>
+</html>
